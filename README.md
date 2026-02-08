@@ -1,4 +1,4 @@
-# Optimization Algorithms
+# Optimizers for solving Group Lasso Problem
 
 This project focuses on solving the **Group Lasso optimization problem** using various optimization algorithms.  
 All implementations are developed using **MATLAB**.
