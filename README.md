@@ -1,26 +1,31 @@
-# Optimization_Algorithms
-My codes for solving Group Lasso Problem using various optimization algorithms
+# Optimization Algorithms
 
-本次Project主要围绕下述 Group Lasso 优化问题进行展开, 借助Matlab编译器， 分别使用了如下方法该问题进行优化.
+This project focuses on solving the **Group Lasso optimization problem** using various optimization algorithms.  
+All implementations are developed using **MATLAB**.
 
-首先，为设置目标与对比， 尝试调用专业的优化求解器mosek与gurobi进行求解。
+To establish benchmarks and enable comparison, we first solve the problem using professional optimization solvers. Specifically, the following approaches are applied:
 
-    1. 调用Matlab中CVX工具包的mosek求解器进行求解.
-    2. 调用Matlab中CVX工具包的gurobi求解器进行求解.
-    3. 直接调用mosek求解器进行求解.
-    4. 直接调用gurobi求解器进行求解.
+## Solver-Based Methods
 
+1. Solving the problem via the **MOSEK** solver using the **CVX** toolbox in MATLAB  
+2. Solving the problem via the **Gurobi** solver using the **CVX** toolbox in MATLAB  
+3. Directly solving the problem using the **MOSEK** solver  
+4. Directly solving the problem using the **Gurobi** solver  
 
-之后， 尝试根据现有算法自行设置求解器与求解过程，使用了如下算法.
+## Algorithmic Methods
 
+Afterwards, we design and implement custom solvers based on classical optimization algorithms, including:
 
-    1. 次梯度下降算法求解原问题.
-    2. 邻近算子梯度法求解原问题.
-    3. 快速邻近算子梯度法求解原问题.
-    4. 增广拉格朗日函数法求解对偶问题.
-    5. 交替方向乘子法求解对偶问题.
-    6. 增广拉格朗日函数法求解线性化原问题.
+1. **Subgradient Descent** for the original problem  
+2. **Proximal Gradient Method** for the original problem  
+3. **Fast Proximal Gradient Method (FISTA)** for the original problem  
+4. **Augmented Lagrangian Method (ALM)** for the dual problem  
+5. **Alternating Direction Method of Multipliers (ADMM)** for the dual problem  
+6. **Augmented Lagrangian Method** for a linearized version of the original problem  
 
-实验报告与代码将附在文件中，欢迎批评指正！
+## Notes
 
-感谢阅读！
+The experimental report and complete source code are provided in the accompanying files.  
+Feedback, comments, and suggestions are very welcome.
+
+Thank you for reading!
